@@ -224,33 +224,35 @@ $\textbf{Given}$ & $\vec{V}$ is the space of $n \times n$ matrices over $F$\\
 \hline
 \multirow{3}{*}{} & \\
 \textbf{Theorem} & Let $\lambda$ be a characteristic value of $\vec{T}$\\
-& and $\lambda \in F$ and $\vec{v}$ is the corresponding characteristic\\
-& vector, then if $\vec{T}$ is a linear operator on a finite \\
-& dimensional space $\vec{V}$, it must be $\det{(T-\lambda I)} = 0$ and \\
-& for $\vec{(T-\lambda I)v} = \vec{0} $, $\vec{v} \neq \vec{0}$\\
+& and $\lambda \in F$,then if $\vec{T}$ is a linear operator on a finite\\
+& dimensional space $\vec{V}$, it must be $\vec{TB}=\lambda \vec{B}$ \\
+& for all $\vec{B}$ where $\vec{B}$ is any $n \times n$ matrix in $\vec{V}$\\
+& \\
+& So, $(\vec{T}-\lambda\vec{I}) \vec{B}=\vec{0}$,$\implies \det{(\vec{T}-\lambda\vec{I})} =0$ \\
 & \\
 \hline
 \multirow{3}{*}{} & \\
-\textbf{Proof} & As per the problem statement, $\vec{Tv} = \vec{\lambda v}$ \\
-& \textbf{or,}  $\vec{Av} = \vec{\lambda v}$, as $\vec{Tv} = \vec{Av}$\\
-& \textbf{or,}  $\vec{(A-\lambda I)v} = \vec{0}$\\
+\textbf{Proof} & As per the problem statement, $\vec{TB}=\lambda \vec{B}$ \\
+& \textbf{or,}  $\vec{AB} = \lambda \vec{B}$, as $\vec{TB} = \vec{AB}$\\
+& \textbf{or,}  $\vec{(A-\lambda I)B} = \vec{0}$\\
 & From here 2 cases can be arrived. \\
 & \\
 \hline
-Case 1: & $\det{(\vec{(A-\lambda I)})} = 0$, where $\vec{v} \neq \vec{0}$\\
+Case 1: & $\det{(\vec{(A-\lambda I)})} = 0$, where $\vec{B} \neq \vec{0}$\\
 & $\implies$ $\lambda$ is characteristic value of $\vec{A}$.\\
 & \\
 \hline
 Case 2: & $\det{(\vec{(A-\lambda I)})} \neq 0 $\\
-& $\implies$ $\vec{(A-\lambda I)}$ is invertible and $\vec{v} = \vec{0}$\\
-& so, for $\vec{(T-\lambda I)v} = \vec{0}$ and \\
+& $\implies$ $\vec{(A-\lambda I)}$ is invertible and $\vec{B} = \vec{0}$\\
+& so, for $\vec{(T-\lambda I)B} = \vec{0}$ and \\
 & $\vec{(T-\lambda I)} \neq \vec{0}$\\
-& $\implies$ $\vec{v}$ is not a charcteristic vector of $\vec{T}$\\
-& which is a contradiction. So, case 2 is not possible.\\
+& $\implies \det{(\vec{T}-\lambda\vec{I})} \neq 0$\\
+& which is a contradiction. So, case 2 is not\\
+& possible.\\
 \hline
-Conclusion & So, from the above 2 cases and from the theorem,\\
-& it can be concluded that $\vec{A}$ and $\vec{T}$ have the same \\
-& characteristic values\\
+Conclusion & So, from the above 2 cases and from \\
+& the theorem,it can be concluded that $\vec{A}$ and \\
+& $\vec{T}$ have the same  characteristic values\\
 \hline
 \caption{$\textbf{Solution summary}$}
 \label{table:1}
